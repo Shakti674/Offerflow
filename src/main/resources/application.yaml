@@ -1,3 +1,6 @@
 spring:
   application:
     name: offerflow
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
