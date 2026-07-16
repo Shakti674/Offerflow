@@ -1,6 +1,10 @@
 spring:
   application:
     name: offerflow
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+  profiles:
+    active: local
+  jpa:
+    open-in-view: false
+
+server:
+  port: 8080
